@@ -47,6 +47,13 @@ export default {
 </script>
 ```
 
+## Related
+
+You might also like:
+
+- [React to Vue](https://github.com/egoist/react-to-vue)
+- [Vue to React](https://github.com/egoist/vue-to-react)
+
 ## License
 
 MIT &copy; [EGOIST (Kevin Titor)](https://github.com/sponsors/egoist)
