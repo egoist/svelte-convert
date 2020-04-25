@@ -9,7 +9,9 @@
   "files": [
     "dist",
     "/react.js",
-    "/vue.js"
+    "/vue.js",
+    "/react.d.ts",
+    "/vue.d.ts"
   ],
   "scripts": {
     "build": "rollup -c",
