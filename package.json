@@ -16,14 +16,19 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
+    "@types/jest": "^25.2.1",
     "@types/node": "^13.13.2",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.6",
+    "jest": "^25.4.0",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "rollup": "^2.7.2",
     "rollup-plugin-typescript2": "^0.27.0",
     "svelte": "^3.21.0",
+    "svelte-jest": "^0.3.1",
+    "ts-jest": "^25.4.0",
     "typescript": "^3.8.3"
   }
 }

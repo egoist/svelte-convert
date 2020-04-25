@@ -2,6 +2,10 @@
 
 Convert Svelte component to Vue or React component, with SSR support.
 
+## Why 
+
+[Svelte](https://svelte.dev) outputs light-weight JavaScript code, so you can use it to write framework aganostic component and then consume it in your React / Vue app.
+
 ## Install
 
 ```bash
@@ -12,29 +16,35 @@ yarn add svelte-convert
 
 ### React
 
-```js
-import { render } from 'react-dom'
+```jsx
 import { convert } from 'svelte-convert/react'
-import SvelteApp from './App.svelte'
+import SvelteCounter from './Counter.svelte'
 
-const App = convert(SvelteApp)
+// Convert the Svelte component to React Component
+const Counter = convert(SvelteCounter)
 
-render(<App count={1} />, document.getElementById('app'))
+export default () => {
+  return <Counter initialCount={2} />
+}
 ```
 
 ### Vue
 
-```js
-import Vue from 'vue'
+```vue
+<template>
+  <Counter :initialCount="2" />
+</template>
+
+<script>
 import { convert } from 'svelte-convert/vue'
-import SvelteApp from './App.svelte'
+import SvelteCounter from './Counter.svelte'
 
-const App = convert(SvelteApp)
-
-new Vue({
-  el: '#app',
-  render: h => h(App)
-})
+export default {
+  components: {
+    Counter: convert(SvelteCounter)
+  }
+}
+</script>
 ```
 
 ## License

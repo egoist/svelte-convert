@@ -7,7 +7,7 @@ export function convert<TProps = any>(Component: any): React.FC<TProps> {
       const { html, css } = Component.render(props)
       return (
         <>
-          <style>{css}</style>
+          <style>{css.code}</style>
           <div dangerouslySetInnerHTML={{ __html: html }}></div>
         </>
       )
