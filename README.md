@@ -4,7 +4,7 @@ Convert Svelte component to Vue or React component, with SSR support.
 
 ## Why 
 
-[Svelte](https://svelte.dev) outputs light-weight JavaScript code, so you can use it to write framework aganostic component and then consume it in your React / Vue app.
+[Svelte](https://svelte.dev) outputs light-weight JavaScript code, so you can use it to write framework agnostic component and then consume it in your React / Vue app.
 
 ## Install
 
