@@ -3,7 +3,7 @@ import { isServer } from './shared'
 
 export function convert<TProps = any>(Component: any): React.FC<TProps> {
   if (isServer) {
-    return (props: any) => {
+    return (props) => {
       const { html, css } = Component.render(props)
       return (
         <>
