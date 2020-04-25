@@ -28,3 +28,8 @@ jobs:
     - run: npm test
       env:
         CI: true
+    - name: Release
+      run: npx semantic-release
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
